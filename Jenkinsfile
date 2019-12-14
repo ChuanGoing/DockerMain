@@ -18,4 +18,5 @@ pipeline {
 		echo 'docker-compose up --build'
       }
     }
+  }
 }
