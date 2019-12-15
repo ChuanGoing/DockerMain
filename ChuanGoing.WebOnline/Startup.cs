@@ -32,7 +32,7 @@ namespace ChuanGoing.WebOnline
             var authConfig = Configuration.GetSection("Authorization");
             services.AddHttpClient("AuthenClient", config =>
             {
-                config.BaseAddress = new Uri(authConfig.GetValue<string>("Authority"));
+                config.BaseAddress = new Uri(authConfig.GetValue<string>("Authority")); 
             });
         }
 
